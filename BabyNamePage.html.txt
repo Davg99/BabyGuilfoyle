@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>Baby Naming</h1>
+    <form action="." method="POST">
+        <input type="text" name="Username">
+        <input type="text" name="BabyName">
+  	<input type="text" name="BestSport">
+   	<input type="text" name="FavCity">
+   	<input type="text" name="FavBeer">
+       
+    </form>
+</body>
+</html>
