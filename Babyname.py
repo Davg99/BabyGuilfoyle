@@ -14,4 +14,4 @@ BestSport = input("What will " + BabyName + "'s preferred sport be?")
 FavCity = input("What will " + BabyName + "'s favorite city be?")
 FavBeer = input("What will " + BabyName + "'s favorite beer be?")
 
-print("Awesome! Thanks " + BabyName + " will like " + BestSport + " visiting " + FavCity + "for a cold " + FavBeer + " while enjoying the color " + FavColor + "!")
+print("Awesome! Thanks " + Username + ".  " + BabyName + " will like " + BestSport + " visiting " + FavCity + "for a cold " + FavBeer + " while enjoying the color " + FavColor + "!")
