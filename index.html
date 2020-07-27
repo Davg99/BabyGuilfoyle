@@ -72,19 +72,55 @@ footer {
 </style>
   </head>
   <h1>Baby Guilfoyle</h1>
-  <p>We are having a baby and need help coming up with a name.</p>
+  <p> <strong> We are having a baby boy! <br> We need help coming up with a name. </strong> </p>
   <p>Follow the Links below, answer...</p>
   <img src="GIT/Images/Baby_Climber.jpg" alt="Baby Climbing" width="250" height="250">
   <body>
-
+	<hr>
   <h2>Baby Form</h2>
 
   <form action="/action_page.php">
-    <label for="fname">BabyName:</label><br>
+    <label for="name">BabyName:</label><br>
     <input type="text" id="BabyName" name="BabyName" value="Pick a Baby Name"><br>
-    <label for="lname">Favorite Color:</label><br>
-    <input type="text" id="FavoriteColor" name="FavoriteColor" value="Pick a favorite color"><br><br>
-    <input type="submit" value="Submit">
+    <label for="color">Favorite Color:</label><br>
+    <input type="text" id="FavoriteColor" name="FavoriteColor" value="Pick a favorite color"><br>
+    <label for="Sport">Favorite Sport:</label><br>
+	<input type="text" id="Favorite Sport" name="FavoriteSport"  value="What Sport will he play?"><br>
+    <label for="Parent">Favorite Parent:</label><br>
+	<select id="Favorite Parent" name="FavoriteParent">
+		<option> Mom </option>
+		<option> Dad </option>
+		<option> Cole</option> </select><br> 
+    <label for="BirthWeight">BirthWeight:</label><br>
+	<select id="BirthWeight" name="BirthWeight" value="??">
+		<option> 5.5 lbs</option> 
+		<option> 5.7 lbs </option>
+		<option> 6.0 lbs </option>
+		<option> 6.3 lbs </option>
+		<option> 6.5 lbs</option> 
+		<option> 6.7 lbs </option>
+		<option> 7.0 lbs </option>
+		<option> 7.3 lbs </option>
+		<option> 7.5 lbs</option> 
+		<option> 7.7 lbs </option>
+		<option> 8.0 lbs </option>
+		<option> 8.3 lbs </option>
+		<option> 8.5 lbs</option> 
+		<option> 8.7 lbs </option>
+		<option> 9.0 lbs </option>
+		<option> 9.3 lbs </option>
+		<option> 9.5 lbs</option> 
+		<option> 9.7 lbs </option>
+		<option> 10.0 lbs </option>
+		<option> 10.3 lbs </option>
+		<option> 10.5 lbs</option> 
+		<option> 10.7 lbs </option>
+		<option> 15.4 lbs </option>
+		</select><br> 		
+    <label for="Beer">Favorite Beer:</label><br>
+	<input type="text" id="Favorite Beer" name="FavoriteBeer"  value=" Pick his favorite beer"><br><br> 
+
+	<input type="submit" value="Submit">
   </form>
 
   <p>If you click the "Submit" button, the form-data will be sent to a page called "The Form".</p>
@@ -96,7 +132,7 @@ footer {
   <section>
     <nav>
       <ul>
-        <li><a href="#">Doug</a></li>
+        <li><a href="#">Dan</a></li>
         <li><a href="#">Billy-Mac</a></li>
         <li><a href="#">Eugene</a></li>
       </ul>
@@ -104,9 +140,14 @@ footer {
 
     <article>
       <h1>Billy-Mac</h1>
-      <p>Likes the color Blue</p>
-      <p>Favorite Beer is Coors</p>
-    </article>
+      <p>
+	  <ul>
+			<li> Likes the color Blue </li>
+			<li> Favorite Beer is Coors </li>
+		</ul>
+		</p>
+	
+	</article>
   </section>
 
   <footer>
