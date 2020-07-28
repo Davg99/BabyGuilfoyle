@@ -7,6 +7,7 @@
 	<style>
   
   h1 {text-align: center;}
+  h2 {text-align: center;}
   p {text-align: center;}
   
 *{
@@ -81,9 +82,10 @@ footer {
   <header>
     <h2>Kristin Wegner</h2>
 	<body>
-	 <p><img src="GIT/Images/Kristin2.jpg" alt="Kristin" width="250" height="250"></p>
-	  <p><img src="GIT/Images/Kristin3.jpg" alt="Kristin" width="250" height="250"></p>
-	About
+<p><img alt="Kristin" src="/GIT/Images/Kristin 2.jpg" style="width: 411px; height: 604px;" /></p>
+<p><img alt="Kristin" src="/GIT/Images/kristin 3.jpg" style="width: 250px; height: 250px;" /></p>
+<p><img alt="Kristin" src="/GIT/Images/kristin 4.jpg" style="width: 250px; height: 250px;" /></p>
+	Kristin is swell and married
 	
 	</body>
   </header>
