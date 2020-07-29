@@ -7,8 +7,6 @@
 			background: #ff9900;
 			}
 		
-
-		
 		.partition {
 			width:60px;
 			border-left: 1px black solid;
@@ -25,10 +23,9 @@
 			}
 		
 		.baby_form {
-		background-color:#0073e6;
-		text-align:center;
-			
-		}	
+			background-color:#0073e6;
+			text-align:center;	
+			}	
 		
 		#logos {
 			margin-top:8px;
