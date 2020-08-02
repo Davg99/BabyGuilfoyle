@@ -1,148 +1,133 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8"><meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
-	<title>Baby Guilfoyle</title>
-	        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
-
-</head>
-	<body>
 	
-<body><!-- Topbar Navigation CSS topbar, partition and topbar-menu -->
-<div id="topbar">
-<div class="partition topbar-menu"><a href="http://www.bootsoles.com" hrefs="http://www.bootsoles.com&quot;">Home</a></div>
-<div class="partition topbar-menu"><a href="/GIT/Us.html" hrefs="http://www.bootsoles.com/Us&quot;">Us</a></div>
-<div class="partition topbar-menu"><a href="/GIT/Kristin.html" hrefs="http://www.bootsoles.com/Kristin&quot;">Kristin</a></div>
-<div class="partition topbar-menu"><a href="/GIT/David.html" hrefs="http://www.bootsoles.com/David&quot;">David </a></div>
-<div class="partition topbar-menu"><a href="/GIT/Baby_Name.html" hrefs="http://www.bootsoles.com/Baby_Name&quot;">Baby Name </a></div>
-<div class="partition topbar-menu"><a href="/GIT/Baby_Pics.html" hrefs="http://www.bootsoles.com/Baby_Pics&quot;">Baby Pics </a></div>
-
-</div>
+		#topbar {
+			min-width:0 auto;
+			margin-top:0 auto;
+			height: 40px;
+			background: #ff9900;
+			}
 		
-	<div class="lead">
-			<h1><span style="font-size:72px;">Baby Guilfoyle</span></h1>
-			<p><span style="font-size:36px;">Could he be named Aaron or Zeus !<br /> Or any name in-between <br /> Help us below ! .</span></p>
-			<p><img alt="Baby_Climber" src="/GIT/Images/Baby_Climber.jpg" style="width: 400px; height: 302px;" /></p>
-		</div>
+		.lead {
 		
-
-<hr />
-
-<!-- This is the Baby Form -->
-<div class="baby_form">
-<div id="errorMessage"></div>
-<div id="successMessage">Your form has been submitted!</div>
-
-<h2>Baby Form</h2>
-<label for="BabyName">Baby Name:</label><br />
-<input id="BabyName" name="BabyName" type="text" placeholder = "What should the baby be named?" /><br />
-<label for="FavoriteColor">Favorite Color:</label><br />
-<input id="FavoriteColor" name="FavoriteColor" type="text" value="" /><br />
-<label for="FavoriteSport">Favorite Sport:</label><br />
-<input id="FavoriteSport" name="FavoriteSport" type="text" value="" /><br />
-<label for="FavoriteParent">Favorite Parent:</label><br />
-<select id="FavoriteParent" name="FavoriteParent"><option></option><option>Mom</option><option>Dad</option><option>Cole</option> </select><br />
-<label for="BirthWeight">BirthWeight:</label><br />
-<select id="BirthWeight" name="BirthWeight"><option></option><option>5.5 lbs</option><option>6.0 lbs</option><option>6.5 lbs</option><option>7.0 lbs</option><option>7.5 lbs</option><option>8.0 lbs</option><option>8.5 lbs</option><option>9.0 lbs</option><option>9.5 lbs</option><option>10.0 lbs</option><option>10.5 lbs</option><option>15.4 lbs</option> </select><br />
-<label for="FavoriteBeer">Favorite Beer:</label><br />
-<input id="FavoriteBeer" name="FavoriteBeer" type="text" /><br />
-<label for="FavoritePizza">Favorite Pizza Toppings:</label><br />
-<input id="FavoritePizza" name="FavoritePizza" type="text" /><br />
-<input type="submit" id="submitButton" value="Submit Form" /> 
-
-<script type="text/javascript">
-
-	$("#submitButton").click(function() {
+			margin-left:auto;
+			margin-right:auto;
+			font-family: 'Shadows Into Light', cursive;
+			text-align: center;
+			font-weight:bold;	
+			}
 		
-		var errorMessage = "";
-		
-		var  fieldsMissing = "";
+		.partition {
+			width:60px;
+			border-left: 1px black solid;
+			height:40px
+			}
 			
-		if ($("#BabyName").val() =="") {
+		.topbar-menu {
+			width:120px;
+            float:left;
+			font-weight: bold;
+            font-size: 90%;
+            padding: 13px 15px 0 15px;
+            height:40px;
+			}
 		
-			fieldsMissing += "Baby Name, ";	
-	
-		}
-		
-		if ($("#FavoriteColor").val() =="") {
-		
-		fieldsMissing += " Favorite Color, ";
-				
-		}
-		
-
-		
-		if ($("#FavoriteSport").val() =="") {
-		
-		fieldsMissing += " Favorite Sport, ";
-				
-		}
-		
-	
-		
-		if ($("#FavoriteParent").val() =="") {
-		
-		fieldsMissing += " Favorite Parent, ";
-				
-		}
-		
-				
-		
-		if ($("#BirthWeight").val() =="") {
-		
-		fieldsMissing += " Birth Weight, ";
-				
-		}
-		
-				
-		
-		if ($("#FavoriteBeer").val() =="") {
-		
-		fieldsMissing += " Favorite Beer, ";
-				
-		}
-		
-		
-						
-		if ($("#FavoritePizza").val() =="") {
-		
-		fieldsMissing += " Favorite Pizza Topping ";
-				
-		}
-		
-	
-		if (fieldsMissing != "") {
-		
-			errorMessage += "The following field(s) are missing: " + fieldsMissing + " !"; 
+		.baby_form {
+			background-color:#0073e6;
+			text-align:center;	
+			font-size:25px;
 			
-		}
-	
-		if (errorMessage != "") {
+		}	
+
+		#logos {
+			margin-top:8px;
+			float:left;
+			margin-right:8px;
+			}
 		
-		 $("#errorMessage").html(errorMessage);
-		 
-		 } else { 
-		 
-			$("#successMessage").show();
-			$("#errorMessage").hide();
+		input { 
+
+			padding: 5px;
+			font-size: 25px;
+			border-radius: 5px;
+			border: 1px solid grey;
+			width:520px;
 		}
-	
-	});	
-	
-	</script>
+		
+		label {
+			border-radius: 5px;
+			border: 1px solid grey;
+			position:relative;
+			top:1px;
+			
+
+			
+			}
+		
+		#successMessage {
+			background-color: white;
+			color:green;
+			font-size: 100% !important;
+			display:none;
+		}
+
+			
+		#errorMessage {
+			background-color: white;
+			color:red;
+			font-size: 100% !important;
+			
+			
+		
+		#wrapper{
+		
+			width: 500px;
+			margin: 0 auto;
+			
+			}
+		}
+		select { 
+
+			padding: 5px;
+			font-size: 25px;
+			border-radius: 5px;
+			border: 1px solid grey;
+			width:520px;
+		}
+		
+		.clear {
+			clear:both;
+			}
+		
+		*{
+			box-sizing: border-box;
+			}
+
+		body {
+			margin:0;
+			padding:0;
+			background-color: #6AADE3;
+			background-blend-mode:lighten;
+			font-family: Arial, Helvetica, sans-serif;
+			}
 
 
-<p><a hrefs="http://www.bootsoles.com/David&quot;">If you click the &quot;Submit&quot; button, the form-data will be sent to a page called &quot;The Form&quot;.</a></p>
-</div>
+		header {
+			background-color: #0073e6;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+			}
 
+		footer {
+			background-color: #ff9900;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
 
-
-
-<footer>
-<p>&copy; Baby Guilfoyle 2020</p>
-</footer>
-</body>
-</html>
+		(max-width: 600px) {
+		nav, article {
+		width: 100%;
+		height: auto;
+			}	
+		}
