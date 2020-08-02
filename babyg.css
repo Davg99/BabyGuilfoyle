@@ -53,9 +53,11 @@
 		}
 		
 		label {
+			border-radius: 5px;
+			border: 1px solid grey;
 			position:relative;
-			top:10px;
-			float: left;
+			top:1px;
+			
 
 			
 			}
