@@ -33,64 +33,102 @@
 
 <!-- This is the Baby Form -->
 <div class="baby_form">
-<h2><a hrefs="http://www.bootsoles.com/David&quot;">Baby Form</a></h2>
+<div id="errorMessage"></div>
+<div id="successMessage">Your form has been submitted!</div>
 
-<input id="BabyName" name="BabyName" type="text" value="" placeholder = "What should the baby be named?" /><br />
-<label for="color">Favorite Color:</label><br />
+<h2>Baby Form</h2>
+<label for="BabyName">Baby Name:</label><br />
+<input id="BabyName" name="BabyName" type="text" placeholder = "What should the baby be named?" /><br />
+<label for="FavoriteColor">Favorite Color:</label><br />
 <input id="FavoriteColor" name="FavoriteColor" type="text" value="" /><br />
-<label for="Sport">Favorite Sport:</label><br />
-<input id="Favorite Sport" name="FavoriteSport" type="text" value="" /><br />
-<label for="Parent">Favorite Parent:</label><br />
-<select id="Favorite Parent" name="FavoriteParent"><option></option><option>Mom</option><option>Dad</option><option>Cole</option> </select><br />
+<label for="FavoriteSport">Favorite Sport:</label><br />
+<input id="FavoriteSport" name="FavoriteSport" type="text" value="" /><br />
+<label for="FavoriteParent">Favorite Parent:</label><br />
+<select id="FavoriteParent" name="FavoriteParent"><option></option><option>Mom</option><option>Dad</option><option>Cole</option> </select><br />
 <label for="BirthWeight">BirthWeight:</label><br />
 <select id="BirthWeight" name="BirthWeight"><option></option><option>5.5 lbs</option><option>6.0 lbs</option><option>6.5 lbs</option><option>7.0 lbs</option><option>7.5 lbs</option><option>8.0 lbs</option><option>8.5 lbs</option><option>9.0 lbs</option><option>9.5 lbs</option><option>10.0 lbs</option><option>10.5 lbs</option><option>15.4 lbs</option> </select><br />
-<label for="Beer">Favorite Beer:</label><br />
-<input id="Favorite Beer" name="FavoriteBeer" type="text" value=" " /><br />
-<br />
+<label for="FavoriteBeer">Favorite Beer:</label><br />
+<input id="FavoriteBeer" name="FavoriteBeer" type="text" /><br />
+<label for="FavoritePizza">Favorite Pizza Toppings:</label><br />
+<input id="FavoritePizza" name="FavoritePizza" type="text" /><br />
 <input type="submit" id="submitButton" value="Submit Form" /> 
 
 <script type="text/javascript">
 
-
 	$("#submitButton").click(function() {
 		
-		var  errorMessage = "";
+		var errorMessage = "";
+		
+		var  fieldsMissing = "";
+			
+		if ($("#BabyName").val() =="") {
+		
+			fieldsMissing += "Baby Name, ";	
 	
-		if ($("#BabyName") == "") {
-		
-			errorMessage += "The Baby is not Named! ";
-		
 		}
 		
-				if ($("#FavoriteColor") == "") {
+		if ($("#FavoriteColor").val() =="") {
 		
-			errorMessage += "The Baby has no favorite Color! ";
-		
-		}
-				if ($("#Favorite Sport") == "") {
-		
-			errorMessage += "#The Baby doesn't like any Sports? ";
-		
-		}
-				if ($("#Favorite Parent") == "") {
-		
-			errorMessage += "The Baby does not have a favorite parent! ";
-		
-		}
-				if ($("#BirthWeight") == "") {
-		
-			errorMessage += "The Baby does not have a weight!";
-		
+		fieldsMissing += " Favorite Color, ";
+				
 		}
 		
-				if ($("#Favorite Beer") == "") {
+
 		
-			errorMessage += "The Baby has no favorite Beer! ";
+		if ($("#FavoriteSport").val() =="") {
 		
+		fieldsMissing += " Favorite Sport, ";
+				
 		}
 		
-		alert(errorMessage);
+	
 		
+		if ($("#FavoriteParent").val() =="") {
+		
+		fieldsMissing += " Favorite Parent, ";
+				
+		}
+		
+				
+		
+		if ($("#BirthWeight").val() =="") {
+		
+		fieldsMissing += " Birth Weight, ";
+				
+		}
+		
+				
+		
+		if ($("#FavoriteBeer").val() =="") {
+		
+		fieldsMissing += " Favorite Beer, ";
+				
+		}
+		
+		
+						
+		if ($("#FavoritePizza").val() =="") {
+		
+		fieldsMissing += " Favorite Pizza Topping ";
+				
+		}
+		
+	
+		if (fieldsMissing != "") {
+		
+			errorMessage += "The following field(s) are missing: " + fieldsMissing + " !"; 
+			
+		}
+	
+		if (errorMessage != "") {
+		
+		 $("#errorMessage").html(errorMessage);
+		 
+		 } else { 
+		 
+			$("#successMessage").show();
+			$("#errorMessage").hide();
+		}
 	
 	});	
 	
