@@ -59,7 +59,20 @@
 
 			
 			}
+		
+		#successMessage {
+			color:green;
+			font-size: 100% !important;
+			display:none;
+		}
+
 			
+		#errorMessage {
+			color:red;
+			font-size: 100% !important;
+			
+			
+		
 		#wrapper{
 		
 			width: 500px;
