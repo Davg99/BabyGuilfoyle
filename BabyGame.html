@@ -13,12 +13,17 @@
     <style>
 
 		#here {
+		
+		height:200px ;
+		width:200px;
+		background-color:blue;
+		float:right;
 	
 		
 	}
 	
 		#box {
-		
+		float:left;
 		width:800px;
 		height:800px ;
 		background-color:green;
@@ -29,7 +34,7 @@
 
     <body>
         
-       <div> Get David and Kristin from Here </div>
+       <div id="box"> Get David and Kristin from Here </div>
 	   <div id = "box"> 
 	   <span id="David"><img alt="David" src="/GIT/Images/David 1.jpg" style="width: 188px; height: 162px;" /></span>
 	   <span id="Kristin"><img alt="Kristin" src="/GIT/Images/Kristin 1.jpg" style="width: 188px; height: 162px;" /></span>
@@ -37,8 +42,10 @@
 				<div id="here"> To here </div>
         <script type="text/javascript">
             
-           $( "#David" ).draggable({containment: "parent" , "destroy"});     
-				$( "#Kristin" ).draggable({containment: "parent"});  
+           $( "#David" ).draggable(); 
+		
+	   
+				$( "#Kristin" ).draggable();  
 					$("#box").resizable({grid:800});
 				
 				
