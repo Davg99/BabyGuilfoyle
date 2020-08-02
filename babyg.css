@@ -61,6 +61,7 @@
 			}
 		
 		#successMessage {
+			background-color: white;
 			color:green;
 			font-size: 100% !important;
 			display:none;
