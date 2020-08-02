@@ -54,7 +54,7 @@
 		
 		label {
 			position:relative;
-			top:4px;
+			top:10px;
 			float: left;
 
 			
@@ -69,6 +69,7 @@
 
 			
 		#errorMessage {
+			background-color: white;
 			color:red;
 			font-size: 100% !important;
 			
