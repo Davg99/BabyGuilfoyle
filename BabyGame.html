@@ -47,14 +47,13 @@
 	   
 				$( "#Kristin" ).draggable();  
 					$("#box").resizable({grid:800});
-					$( "#here" ).droppable({
-      drop: function( event, ui ) {
-        $( this )
-          .addClass( "ui-state-highlight" )
-          .find( "p" )
-            .html( "Dropped!" );
-      )};
-		}				
+					$( "#here" ).droppable({drop: function( event, ui ) {
+					$( this )
+					.addClass( "ui-state-highlight" )
+					.find( "p" )
+					.html( "Dropped!" );
+				});
+      			}
 		            
         </script>
         
