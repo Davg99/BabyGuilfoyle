@@ -41,7 +41,14 @@
 			margin-right:8px;
 			}
 		
+		input { 
 
+			padding: 5px;
+			font-size: 25px;
+			border-radius: 5px;
+			border: 1px solid grey;
+			width:300px;
+		}
 
 		
 		.clear {
