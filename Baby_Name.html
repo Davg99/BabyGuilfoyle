@@ -51,9 +51,16 @@
 
 <script type="text/javascript">
 
+
 	$("#submitButton").click(function() {
+		
+		var  errorMessage = "";
 	
-		alert("Hi");
+		if (isBlank($("BabyName").val()) == false) {
+		
+			errorMessage+= "<p>The Baby is not Named!</p>";
+		
+		}
 		
 	});
 	
