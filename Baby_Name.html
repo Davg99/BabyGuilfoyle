@@ -56,16 +56,43 @@
 		
 		var  errorMessage = "";
 	
-		if ($("BabyName") == "") {
+		if ($("BabyName") === "") {
 		
-			errorMessage += "<p>The Baby is not Named!</p>";
+			errorMessage += "The Baby is not Named! ";
+		
+		}
+		
+				if ($("FavoriteColor") == "") {
+		
+			errorMessage += "The Baby has no favorite Color! ";
+		
+		}
+				if ($("Favorite Sport") == "") {
+		
+			errorMessage += "The Baby doesn't like any Sports? ";
+		
+		}
+				if ($("Favorite Parent") == "") {
+		
+			errorMessage += "The Baby does not have a favorite parent! ";
+		
+		}
+				if ($("BirthWeight") == "") {
+		
+			errorMessage += "The Baby does not have a weight!";
+		
+		}
+		
+				if ($("Favorite Beer") == "") {
+		
+			errorMessage += "The Baby has no favorite Beer! ";
 		
 		}
 		
 		alert(errorMessage);
 		
-	});
 	
+	});	
 	
 	</script>
 
