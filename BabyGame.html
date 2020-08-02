@@ -17,7 +17,7 @@
 		
 	}
 	
-		#resizable {
+		#box {
 		
 		width:800px;
 		height:800px ;
@@ -30,16 +30,16 @@
     <body>
         
        <div> Get David and Kristin from Here </div>
-	   <div id = "resizable"> 
-	   <span id="draggable"><img alt="David" src="/GIT/Images/David 1.jpg" style="width: 188px; height: 162px;" /></span>
-	   <span id="draggable2"><img alt="Kristin" src="/GIT/Images/Kristin 1.jpg" style="width: 188px; height: 162px;" /></span>
+	   <div id = "box"> 
+	   <span id="David"><img alt="David" src="/GIT/Images/David 1.jpg" style="width: 188px; height: 162px;" /></span>
+	   <span id="Kristin"><img alt="Kristin" src="/GIT/Images/Kristin 1.jpg" style="width: 188px; height: 162px;" /></span>
         </div>
 				<div id="here"> To here </div>
         <script type="text/javascript">
             
-           $( "#draggable" ).draggable({containment: "parent"});     
-				$( "#draggable2" ).draggable({containment: "parent"});  
-					$("#resizable").resizable();
+           $( "#David" ).draggable({containment: "parent"});     
+				$( "#Kristin" ).draggable({containment: "parent"});  
+					$("#box").resizable();
 				
 				
 		            
