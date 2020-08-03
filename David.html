@@ -36,23 +36,29 @@
 
 </div>
 
-<!-- <a href="https://www.jqueryscript.net/tags.php?/Carousel/">Carousel</a> Controls -->
-
-<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
-
-  <div class="slides"></div>
-
-  <h3 class="title"></h3>
-
-  <a class="prev">‹</a>
-
-  <a class="next">›</a>
-
-  <a class="play-pause"></a>
-
-  <ol class="indicator"></ol>
-
-</div>
+    <h2>Carousel image gallery</h2>
+    <!-- The Gallery as inline carousel -->
+    <div id="blueimp-image-carousel" class="blueimp-gallery blueimp-gallery-carousel" aria-label="image carousel">
+      <div class="slides" aria-live="off"></div>
+      <h3 class="title"></h3>
+      <a
+        class="prev"
+        aria-controls="blueimp-image-carousel"
+        aria-label="previous slide"
+      ></a>
+      <a
+        class="next"
+        aria-controls="blueimp-image-carousel"
+        aria-label="next slide"
+      ></a>
+      <a
+        class="play-pause"
+        aria-controls="blueimp-image-carousel"
+        aria-label="play slideshow"
+        aria-pressed="true"
+        role="button"
+      ></a>
+    </div>
 
 <script type="text/javascript">
 
