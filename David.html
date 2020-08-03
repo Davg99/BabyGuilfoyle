@@ -3,6 +3,9 @@
 <html lang="en">
 <head><meta charset="utf-8"><meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
 	<title>Baby Guilfoyle</title>
+	<script src="/GIT/jquery.min.js"></script>
+	<script src="/GIT/blueimp-gallery.min.js"></script>
+	<link rel="stylesheet" href="/GIT/blueimp-gallery.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
 	<link href="/GIT/babyg.css" rel="stylesheet" type="text/css" />
 </head>
@@ -22,20 +25,34 @@
 </div>
 
 <header>
-<h2>David</h2>
-</header>
+<!-- Media Links -->
 
-<p style="text-align: center;"><img alt="David" src="/GIT/Images/David 3.jpg" style="width: 600px; height: 799px;" /></p>
+	<div id="links">
 
-<p style="text-align: center;"><img alt="David" src="/GIT/Images/David 2.jpg" style="width: 600px; height: 404px;" /></p>
+	<a href="David.jpg" title="Alt 1" data-description="Description 1 (OPTIONAL)">
+	<img src="/GIT/images/David.jpg" alt="Alt 1" />
 
-<p style="text-align: center;"><img alt="David" src="/GIT/Images/David 4.jpg" style="width: 600px; height: 800px;" /></p>
+	</a>
 
-<p style="text-align: center;"><img alt="David" src="/GIT/Images/David 5.jpg" style="width: 600px; height: 788px;" /></p>
+</div>
 
-<p style="text-align: center;"><img alt="David" src="/GIT/Images/David.jpg" style="width: 400px; height: 426px;" /></p>
+<!-- <a href="https://www.jqueryscript.net/tags.php?/Carousel/">Carousel</a> Controls -->
 
-<p><br />
+<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+
+  <div class="slides"></div>
+
+  <h3 class="title"></h3>
+
+  <a class="prev">‹</a>
+
+  <a class="next">›</a>
+
+  <a class="play-pause"></a>
+
+  <ol class="indicator"></ol>
+
+</div>
 
 <footer>
 <p>&copy; Baby Guilfoyle 2020</p>
