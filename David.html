@@ -36,33 +36,58 @@
 
 </div>
 
-    <h2>Carousel image gallery</h2>
-    <!-- The Gallery as inline carousel -->
-    <div id="blueimp-image-carousel" class="blueimp-gallery blueimp-gallery-carousel" aria-label="image carousel">
-      <div class="slides" aria-live="off"></div>
-      <h3 class="title"></h3>
-      <a
-        class="prev"
-        aria-controls="blueimp-image-carousel"
-        aria-label="previous slide"
-      ></a>
-      <a
-        class="next"
-        aria-controls="blueimp-image-carousel"
-        aria-label="next slide"
-      ></a>
-      <a
-        class="play-pause"
-        aria-controls="blueimp-image-carousel"
-        aria-label="play slideshow"
-        aria-pressed="true"
-        role="button"
-      ></a>
-    </div>
+<div id="links">
+  <a href="/GIT/images/David.jpg" title="David">
+    <img src="/GIT/images/David.jpg" alt="Banana" />
+  </a>
+  <a href="images/apple.jpg" title="Apple">
+    <img src="images/thumbnails/apple.jpg" alt="Apple" />
+  </a>
+  <a href="images/orange.jpg" title="Orange">
+    <img src="images/thumbnails/orange.jpg" alt="Orange" />
+  </a>
+</div>
+<div
+  id="blueimp-gallery"
+  class="blueimp-gallery"
+  aria-label="image gallery"
+  aria-modal="true"
+  role="dialog"
+>
+  <div class="slides" aria-live="polite"></div>
+  <h3 class="title"></h3>
+  <a
+    class="prev"
+    aria-controls="blueimp-gallery"
+    aria-label="previous slide"
+    aria-keyshortcuts="ArrowLeft"
+  ></a>
+  <a
+    class="next"
+    aria-controls="blueimp-gallery"
+    aria-label="next slide"
+    aria-keyshortcuts="ArrowRight"
+  ></a>
+  <a
+    class="close"
+    aria-controls="blueimp-gallery"
+    aria-label="close"
+    aria-keyshortcuts="Escape"
+  ></a>
+  <a
+    class="play-pause"
+    aria-controls="blueimp-gallery"
+    aria-label="play slideshow"
+    aria-keyshortcuts="Space"
+    aria-pressed="false"
+    role="button"
+  ></a>
+  <ol class="indicator"></ol>
+</div>
 
 <script type="text/javascript">
 
-document.getElementById("#blueimp-gallery-carousel").onclick = function(event) {
+document.getElementById("#blueimp-gallery-carousel").onclick =function(event) {
 
   event = event || window.event
 
