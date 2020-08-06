@@ -1,55 +1,54 @@
+<!doctype html>
+<html lang="en">
 
-<?php 
+<head>
+    <meta charset="utf-8">
+    <meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
+    <title>Baby Guilfoyle</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="GIT/jquery-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
+</head>
 
-if (array_key_exists('name', $_POST)) {
-    
-$link = mysqli_connect("localhost", "bootso5_Davg99", "Iceland18!", "bootso5_Baby_Name");
+<body>
+    <!-- Topbar Navigation CSS topbar, partition and topbar-menu -->
+    <div id="topbar">
+        <div class="partition topbar-menu"><a href="http://www.bootsoles.com" hrefs="http://www.bootsoles.com&quot;">Home</a></div>
 
-if (mysqli_connect_error()) {
+        <div class="partition topbar-menu"><a href="/GIT/Us.html" hrefs="http://www.bootsoles.com/Us&quot;">Us</a></div>
 
-    die ("There was an error connecting to the database");
+        <div class="partition topbar-menu"><a href="/GIT/Kristin.html" hrefs="http://www.bootsoles.com/Kristin&quot;">Kristin</a></div>
 
-} 
-    if ($_POST['name'] == '') {
+        <div class="partition topbar-menu"><a href="/GIT/David.html" hrefs="http://www.bootsoles.com/David&quot;">David </a></div>
 
-        echo "The Name is blank!";
-    } else {
+        <div class="partition topbar-menu"><a href="/GIT/Baby_Name.html" hrefs="http://www.bootsoles.com/Baby_Name&quot;">Baby Name </a></div>
 
-        $query = "SELECT `id` FROM `BabyName` WHERE name = '".mysqli_real_escape_string($link, $_POST['name'])."'";   
+        <div class="partition topbar-menu"><a href="/GIT/Baby_Pics.html" hrefs="http://www.bootsoles.com/Baby_Pics&quot;">Baby Pics </a></div>
+    </div>
 
-        $result = mysqli_query($link, $query);
-        
-        if (mysqli_num_rows($result) > 0) {
+    <p></p>
 
-            echo "That Name already exists";
-        } else { 
-            
-            $query = "INSERT INTO `BabyName` (`name`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."')";
+    <header></header>
 
-            if (mysqli_query($link, $query)) {
+    <h2 style="text-align: center;"></h2>
 
-                echo "We got the name.";
-
-        } else {
-
-            echo "Nope";  
-        }
-    }
-
-}
-
-}
+    <p style="text-align: center;"><img alt="Us" src="/GIT/Images/KD.jpg" style="width: 400px; height: 599px;" /></p>
 
 
-?>	
+    <p style="text-align: center;"><img alt="Us" src="/GIT/Images/kd 4.jpg" style="width: 600px; height: 381px;" /><img alt="Us" src="/GIT/Images/kd 3.jpg" style="width: 400px; height: 515px;" /></p>
 
-<form method = "post">  
+    <p style="text-align: center;"><img alt="Us" src="/GIT/Images/kd 10.jpg" style="width: 400px; height: 419px;" /><img alt="Us" src="/GIT/Images/kd 11.jpg" style="width: 400px; height: 679px;" /></p>
 
-<h2>Baby Form</h2>
+    <p style="text-align: center;"><img alt="Us" src="/GIT/Images/kd 5.jpg" style="width: 400px; height: 362px;" /><img alt="Us" src="/GIT/Images/kd 2.jpg" style="width: 400px; height: 481px;" /><img alt="Us" src="/GIT/Images/kd 8.jpg" style="width: 400px; height: 476px;" /></p>
 
-<input name="name" type="text" placeholder = "What should the baby be named?" />
+    <p style="text-align: center;"><img alt="Us" src="/GIT/Images/KD 6.jpg" style="width: 400px; height: 533px;" /><img alt="Us" src="/GIT/Images/KD 7.jpg" style="width: 400px; height: 300px;" /><img alt="Us" src="/GIT/Images/KD 9.jpg" style="width: 400px; height: 356px;" /></p>
 
-<input type="submit" id="submitButton" value="Submit Form" /> 
+    <footer>
+        <p>&copy; Baby Guilfoyle 2020</p>
+    </footer>
+</body>
 
-
-</form>
+</html>
