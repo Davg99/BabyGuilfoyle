@@ -48,6 +48,17 @@ if (mysqli_connect_error()) {
 <h2>Baby Form</h2>
 
 <input name="name" type="text" placeholder = "What should the baby be named?" />
+<label for="FavoriteSport">Favorite Sport:</label><br />
+<input id="FavoriteSport" name="FavoriteSport" type="text" value="" /><br />
+<label for="FavoriteParent">Favorite Parent:</label><br />
+<select id="FavoriteParent" name="FavoriteParent"><option></option><option>Mom</option><option>Dad</option><option>Cole</option> </select><br />
+<label for="BirthWeight">BirthWeight:</label><br />
+<select id="BirthWeight" name="BirthWeight"><option></option><option>5.5 lbs</option><option>6.0 lbs</option><option>6.5 lbs</option><option>7.0 lbs</option><option>7.5 lbs</option><option>8.0 lbs</option><option>8.5 lbs</option><option>9.0 lbs</option><option>9.5 lbs</option><option>10.0 lbs</option><option>10.5 lbs</option><option>15.4 lbs</option> </select><br />
+<label for="FavoriteBeer">Favorite Beer:</label><br />
+<input id="FavoriteBeer" name="FavoriteBeer" type="text" /><br />
+<label for="FavoritePizza">Favorite Pizza Toppings:</label><br />
+<input id="FavoritePizza" name="FavoritePizza" type="text" /><br />
+<input type="submit" id="submitButton" value="Submit Form" /> 
 
 <input type="submit" id="submitButton" value="Submit Form" /> 
 
