@@ -14,6 +14,11 @@ if (mysqli_connect_error()) {
 
         echo "The Name is blank!";
     } else {
+    
+        if ($_POST['color'] == '') {
+
+            echo "The Color is blank!";
+        } else {        
 
         $query = "SELECT `id` FROM `BabyName` WHERE name = '".mysqli_real_escape_string($link, $_POST['name'])."'";   
 
