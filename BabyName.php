@@ -4,9 +4,6 @@
 
 session_start();
 
-    echo $_SESSION['name'];
-
-
 if (array_key_exists('name', $_POST)) {
     
 $link = mysqli_connect("localhost", "bootso5_Davg99", "VaQYEGTc2d", "bootso5_Baby_Name");
@@ -15,32 +12,20 @@ if (mysqli_connect_error()) {
 
     die ("There was an error connecting to the database");
 
+    }      
+
+$query = "INSERT INTO `BabyName` (`name`, `color`, `sport`, `parent`, `weight`, `14er`, `beer`, `pizza`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."', '".mysqli_real_escape_string($link, $_POST['weight'])."', '".mysqli_real_escape_string($link, $_POST['14er'])."', '".mysqli_real_escape_string($link, $_POST['beer'])."', '".mysqli_real_escape_string($link, $_POST['pizza'])."')";
+                
+if (mysqli_query($link, $query)) {
+           
+    $_SESSION['name'] = $_POST['name'];
+
+    header("Location: GIT/session.php");
+                
     } 
-         
-
-            
-            
-            $query = "INSERT INTO `BabyName` (`name`, `color`, `sport`, `parent`, `weight`, `14er`, `beer`, `pizza`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."', '".mysqli_real_escape_string($link, $_POST['weight'])."', '".mysqli_real_escape_string($link, $_POST['14er'])."', '".mysqli_real_escape_string($link, $_POST['beer'])."', '".mysqli_real_escape_string($link, $_POST['pizza'])."')";
-                
-
-
-            if (mysqli_query($link, $query)) {
-
-            
-echo '<script>alert("Success")</script>';
-                
-        } else {
-
-            echo '<script>alert("We are unable to process your request at the moment please tell Kristin!")</script>';
- 
-                 }
                 
 }
         
-    
-
-
-
 
 ?>
 <html lang="en">
