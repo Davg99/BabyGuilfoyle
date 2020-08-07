@@ -3,7 +3,7 @@
 
 if (array_key_exists('name', $_POST)) {
     
-$link = mysqli_connect("localhost", "bootso5_Davg99", "Iceland18!", "bootso5_Baby_Name");
+$link = mysqli_connect("localhost", "bootso5_Davg99", "VaQYEGTc2d", "bootso5_Baby_Name");
 
 if (mysqli_connect_error()) {
 
