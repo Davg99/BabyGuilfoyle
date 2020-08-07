@@ -82,7 +82,8 @@ if (mysqli_connect_error()) {
 		</div>
 
 
-<form method = "post">  
+<form method = "post" action  = "<?=$_SERVER['php_self']?>" 
+      onSubmit= "window.close();">  
 
 <h2>Baby Form</h2>
 <body>
