@@ -9,17 +9,8 @@ if (mysqli_connect_error()) {
 
     die ("There was an error connecting to the database");
 
-} 
-    if ($_POST['name'] == '') {
-
-        echo "The Name is blank!";
-    } else {
-    
-        if ($_POST['color'] == '') {
-
-            echo "The Color is blank!";
-        } else {        
-
+    } 
+         
         $query = "SELECT `id` FROM `BabyName` WHERE name = '".mysqli_real_escape_string($link, $_POST['name'])."'";   
 
         $result = mysqli_query($link, $query);
@@ -45,9 +36,9 @@ if (mysqli_connect_error()) {
             }
 
         }
-    }
+    
 
-}
+
 
 
 ?>	
