@@ -34,7 +34,17 @@ if (mysqli_connect_error()) {
 
 
 
-?>	
+?>
+<html lang="en">
+<head>
+	<meta charset="utf-8"><meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
+	<title>Baby Guilfoyle</title>
+	        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
+
+</head>	
 <style>
 		body {
 			margin:0;
