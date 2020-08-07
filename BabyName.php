@@ -4,7 +4,7 @@
 
 session_start();
 
-    echo $_SESSION['username'];
+    echo $_SESSION['name'];
 
 
 if (array_key_exists('name', $_POST)) {
@@ -26,15 +26,18 @@ if (mysqli_connect_error()) {
 
             if (mysqli_query($link, $query)) {
 
-                echo '<script>alert("We recieved your informtation! Thanks so much for helping us pick a name...")</script>';
+            
+                $_SESSION['name'] = $_POST['name']:
 
+                header("Location: GIT/session.php"):
+                
         } else {
 
             echo '<script>alert("We are unable to process your request at the moment please tell Kristin!")</script>';
  
                  }
-            }
-
+                
+}
         
     
 
