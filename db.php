@@ -46,7 +46,7 @@ if (mysqli_connect_error()) {
 <form method = "post">  
 
 <h2>Baby Form</h2>
-
+<label for="BabyName">Baby Name:</label><br />
 <input name="name" type="text" placeholder = "What should the baby be named?" />
 <label for="FavoriteSport">Favorite Sport:</label><br />
 <input id="FavoriteSport" name="FavoriteSport" type="text" value="" /><br />
@@ -57,8 +57,8 @@ if (mysqli_connect_error()) {
 <label for="FavoriteBeer">Favorite Beer:</label><br />
 <input id="FavoriteBeer" name="FavoriteBeer" type="text" /><br />
 <label for="FavoritePizza">Favorite Pizza Toppings:</label><br />
-<input id="FavoritePizza" name="FavoritePizza" type="text" /><br />
-<input type="submit" id="submitButton" value="Submit Form" /> 
+<input id="FavoritePizza" name="FavoritePizza" type="text" placeholder = "What toppings will he put on his pizza?" /><br />
+
 
 <input type="submit" id="submitButton" value="Submit Form" /> 
 
