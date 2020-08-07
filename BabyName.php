@@ -40,58 +40,12 @@ if (mysqli_connect_error()) {
 	<meta charset="utf-8"><meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
 	<title>Baby Guilfoyle</title>
 
+
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
+
 </head>	
-<style>
-		body {
-			margin:0;
-			padding:0;
-			background-color: #6AADE3;
-			background-blend-mode:lighten;
-			font-family: Arial, Helvetica, sans-serif;
-            }
-            
-        form {
-		    background-color:#0073e6;
-		    text-align:center;	
-            font-size:25px;
-            }   
-            
-            #topbar {
-			min-width:0 auto;
-			margin-top:0 auto;
-			height: 40px;
-			background: #ff9900;
-			}
-		
-		.lead {
-		
-			margin-left:auto;
-			margin-right:auto;
-			font-family: 'Shadows Into Light', cursive;
-			text-align: center;
-			font-weight:bold;	
-			}
-		
-		.partition {
-			width:60px;
-			border-left: 1px black solid;
-			height:40px
-			}
-			
-		.topbar-menu {
-			width:120px;
-            float:left;
-			font-weight: bold;
-            font-size: 90%;
-            padding: 13px 15px 0 15px;
-            height:40px;
-			} 
-        footer {
-			background-color: #ff9900;
-			padding: 10px;
-			text-align: center;
-			color: white;
-		}             
+           
 </style>
 <div id="topbar">
         <div class="partition topbar-menu"><a href="http://www.bootsoles.com" hrefs="http://www.bootsoles.com&quot;">Home</a></div>
