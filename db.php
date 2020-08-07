@@ -28,6 +28,14 @@ if (mysqli_connect_error()) {
 
             echo "That Name already exists";
         } else { 
+                if ($_POST['parent'] == '') {
+
+                echo "The Favorite Parent hasn't been picked";
+                } else { 
+                    if ($_POST['weight'] == '') {
+
+                        echo "The Baby's weight is blank!";
+                    } else { 
             
             $query = "INSERT INTO `BabyName` (`name`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."')";
 
@@ -38,14 +46,14 @@ if (mysqli_connect_error()) {
         } else {
 
             echo "Nope";  
+                 }
+        }}
+
         }
     }
 
-        }
 }
-
 }
-
 
 ?>	
 
