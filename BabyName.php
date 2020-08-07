@@ -39,6 +39,7 @@ if (mysqli_connect_error()) {
 <form method = "post">  
 
 <h2>Baby Form</h2>
+<body style="font-size:30">
 <label for="BabyName">Baby Name:</label><br />
 <input id= "BabyName" name="name" type="text" placeholder = "What should the baby be named?" /><br/>
 <label for="FavoriteColor">Favorite Color:</label><br />
@@ -58,6 +59,6 @@ if (mysqli_connect_error()) {
 
 
 <input type="submit" id="submitButton" value="Submit Form" /> 
-
+        </body>
 
 </form>
