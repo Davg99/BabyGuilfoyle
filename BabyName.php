@@ -35,46 +35,40 @@ if (mysqli_connect_error()) {
 
 
 ?>
+<!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8"><meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
-	<title>Baby Guilfoyle</title>
-	        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
+    <title>Baby Guilfoyle</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="GIT/jquery-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
+</head>
 
-	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
+<body>
+    <!-- Topbar Navigation CSS topbar, partition and topbar-menu -->
+    <div id="topbar">
+        <div class="partition topbar-menu"><a href="http://www.bootsoles.com" hrefs="http://www.bootsoles.com&quot;">Home</a></div>
 
-</head>	
-<style>
-		body {
-			margin:0;
-			padding:0;
-			background-color: #6AADE3;
-			background-blend-mode:lighten;
-			font-family: Arial, Helvetica, sans-serif;
-            }
-            
-        form {
-		    background-color:#0073e6;
-		    text-align:center;	
-            font-size:25px;
-            }   
-            
-        .lead {
-		
-            margin-left:auto;
-            margin-right:auto;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            font-weight:bold;	
-            }   
-        footer {
-			background-color: #ff9900;
-			padding: 10px;
-			text-align: center;
-			color: white;
-		}             
-</style>
+        <div class="partition topbar-menu"><a href="/GIT/Us.html" hrefs="http://www.bootsoles.com/Us&quot;">Us</a></div>
+
+        <div class="partition topbar-menu"><a href="/GIT/Kristin.html" hrefs="http://www.bootsoles.com/Kristin&quot;">Kristin</a></div>
+
+        <div class="partition topbar-menu"><a href="/GIT/David.html" hrefs="http://www.bootsoles.com/David&quot;">David </a></div>
+
+        <div class="partition topbar-menu"><a href="/GIT/Baby_Name.html" hrefs="http://www.bootsoles.com/Baby_Name&quot;">Baby Name </a></div>
+
+        <div class="partition topbar-menu"><a href="/GIT/Baby_Pics.html" hrefs="http://www.bootsoles.com/Baby_Pics&quot;">Baby Pics </a></div>
+    </div>
+
+    <p></p>
+
+    <header></header>
 <div class="lead">
 			<h1><span style="font-size:72px;">Baby Guilfoyle</span></h1>
 			<p><span style="font-size:36px;">Could he be named Aaron or Zeus !<br /> Or any name in-between <br /> Help us below ! .</span></p>
@@ -82,7 +76,7 @@ if (mysqli_connect_error()) {
 		</div>
 
 
-<form method = "post">  
+<form method = "post" >  
 
 <h2>Baby Form</h2>
 <body>
