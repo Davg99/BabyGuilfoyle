@@ -30,7 +30,9 @@ if (mysqli_connect_error()) {
         } else { 
             
             
-            $query = "INSERT INTO `BabyName` (`name`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."')";
+            $query = "INSERT INTO `BabyName` (`name`, `color`, `parent`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."')";
+                
+
 
             if (mysqli_query($link, $query)) {
 
