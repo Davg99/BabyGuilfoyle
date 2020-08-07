@@ -66,7 +66,7 @@ if (mysqli_connect_error()) {
 <label for="FavoriteBeer">Favorite Beer:</label><br />
 <input id="FavoriteBeer" name="FavoriteBeer" type="text" placeholder = "Which Brand of Beer will he be breaking out after climbing a 14er?"/><br />
 <label for="FavoritePizza">Favorite Pizza Toppings:</label><br />
-<input id="FavoritePizza" name="FavoritePizza" type="text" placeholder = "What toppings will he put on his pizza?" /><br />
+<input id="FavoritePizza" name="FavoritePizza" type="text" placeholder = "What toppings will he put on his pizza?" /><br /><br />
 
 
 <input type="submit" id="submitButton" value="Submit Form" /> 
