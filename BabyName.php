@@ -40,8 +40,6 @@ if (mysqli_connect_error()) {
 	<meta charset="utf-8"><meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
 	<title>Baby Guilfoyle</title>
 
-	<link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
-
 </head>	
 <style>
 		body {
