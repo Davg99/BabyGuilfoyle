@@ -20,11 +20,11 @@ if (mysqli_connect_error()) {
 
             if (mysqli_query($link, $query)) {
 
-                echo "We got the info!  Thanks so much!";
+                echo "<script>alert('Success!');</script>";
 
         } else {
 
-            echo "Nope";  
+            echo "<script>alert('Failure.');</script>";  
                  }
             }
 
