@@ -1,6 +1,12 @@
 
 <?php 
 
+
+session_start();
+
+    echo $_SESSION['username'];
+
+
 if (array_key_exists('name', $_POST)) {
     
 $link = mysqli_connect("localhost", "bootso5_Davg99", "VaQYEGTc2d", "bootso5_Baby_Name");
