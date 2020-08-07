@@ -35,24 +35,69 @@ if (mysqli_connect_error()) {
 
 
 ?>
-<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
-    <title>Baby Guilfoyle</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link href="GIT/jquery-ui.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
-</head>
+	<meta charset="utf-8"><meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
+	<title>Baby Guilfoyle</title>
+	        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<body>
-    <!-- Topbar Navigation CSS topbar, partition and topbar-menu -->
-    <div id="topbar">
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
+
+</head>	
+<style>
+		body {
+			margin:0;
+			padding:0;
+			background-color: #6AADE3;
+			background-blend-mode:lighten;
+			font-family: Arial, Helvetica, sans-serif;
+            }
+            
+        form {
+		    background-color:#0073e6;
+		    text-align:center;	
+            font-size:25px;
+            }   
+            
+            #topbar {
+			min-width:0 auto;
+			margin-top:0 auto;
+			height: 40px;
+			background: #ff9900;
+			}
+		
+		.lead {
+		
+			margin-left:auto;
+			margin-right:auto;
+			font-family: 'Shadows Into Light', cursive;
+			text-align: center;
+			font-weight:bold;	
+			}
+		
+		.partition {
+			width:60px;
+			border-left: 1px black solid;
+			height:40px
+			}
+			
+		.topbar-menu {
+			width:120px;
+            float:left;
+			font-weight: bold;
+            font-size: 90%;
+            padding: 13px 15px 0 15px;
+            height:40px;
+			} 
+        footer {
+			background-color: #ff9900;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}             
+</style>
+<div id="topbar">
         <div class="partition topbar-menu"><a href="http://www.bootsoles.com" hrefs="http://www.bootsoles.com&quot;">Home</a></div>
 
         <div class="partition topbar-menu"><a href="/GIT/Us.html" hrefs="http://www.bootsoles.com/Us&quot;">Us</a></div>
@@ -69,6 +114,7 @@ if (mysqli_connect_error()) {
     <p></p>
 
     <header></header>
+
 <div class="lead">
 			<h1><span style="font-size:72px;">Baby Guilfoyle</span></h1>
 			<p><span style="font-size:36px;">Could he be named Aaron or Zeus !<br /> Or any name in-between <br /> Help us below ! .</span></p>
