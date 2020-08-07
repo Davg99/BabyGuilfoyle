@@ -20,7 +20,7 @@ if (mysqli_connect_error()) {
 
             if (mysqli_query($link, $query)) {
 
-                echo "<script>alert('We've recieved your informtation! Thanks so much for helping us pick a name...');</script>";
+                echo "<script>alert('Success');</script>";
 
         } else {
 
@@ -39,10 +39,7 @@ if (mysqli_connect_error()) {
 <head>
 	<meta charset="utf-8"><meta name="Baby Guilfoyle" content="width=device-width, initial-scale=1">
 	<title>Baby Guilfoyle</title>
-	        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="/GIT/babyg.css">
 
 </head>	
 <style>
@@ -139,7 +136,7 @@ if (mysqli_connect_error()) {
 <label for="First 14er">What will be the first 14,000ft Mountain he climbs?</label><br />
 <select id="BirthWeight" name="14er"><option></option><option>Mt. Elbert </option><option>	Mt. Massive	</option><option>	Mt. Harvard	</option><option>	Blanca Peak	</option><option>	La Plata Peak	</option><option>	Uncompahgre Peak	</option><option>	Crestone Peak	</option><option>	Mt. Lincoln	</option><option>	Castle Peak	</option><option>	Grays Peak	</option><option>	Mt. Antero	</option><option>	Torreys Peak	</option><option>	Quandary Peak	</option><option>	Mt. Evans	</option><option>	Longs Peak	</option><option>	Mt. Wilson	</option><option>	Mt. Cameron	</option><option>	Mt. Shavano	</option><option>	Mt. Princeton	</option><option>	Mt. Belford	</option><option>	Mt. Yale	</option><option>	Crestone Needle	</option><option>	Mt. Bross	</option><option>	Kit Carson Peak	</option><option>	Maroon Peak	</option><option>	Tabeguache Mtn.	</option><option>	Mt. Oxford	</option><option>	El Diente Peak	</option><option>	Mt. Democrat	</option><option>	Mt. Sneffels	</option><option>	Capitol Peak	</option><option>	Pikes Peak	</option><option>	Snowmass Mtn.	</option><option>	Mt. Eolus	</option><option>	Windom Peak	</option><option>	Challenger Point	</option><option>	Mt. Columbia	</option><option>	Missouri Mountain	</option><option>	Humboldt Peak	</option><option>	Mt. Bierstadt	</option><option>	Conundrum Peak	</option><option>	Sunlight Peak	</option><option>	Handies Peak	</option><option>	Culebra Peak	</option><option>	Ellingwood Peak	</option><option>	Mt. Lindsey	</option><option>	North Eolus	</option><option>	Little Bear Peak	</option><option>	Mt. Sherman	</option><option>	Redcloud Peak	</option><option>	Pyramid Peak	</option><option>	North Maroon Peak	</option><option>	Wilson Peak	</option><option>	Wetterhorn Peak	</option><option>	San Luis Peak	</option><option>	Huron Peak	</option><option>	Mt. of the Holy Cross	</option><option>	Sunshine Peak	</option></select><br />
 <label for="FavoriteBeer">Favorite Beer:</label><br />
-<input id="FavoriteBeer" name="beer" type="text" placeholder = "Which will he be enjoying after a summit?"/><br />
+<input id="FavoriteBeer" name="beer" type="text" placeholder = "Which Brand will he be enjoying after a summit?"/><br />
 <label for="FavoritePizza">Favorite Pizza Toppings:</label><br />
 <input id="FavoritePizza" name="pizza" type="text" placeholder = "What toppings will he put on his pizza?" /><br /><br />
 
