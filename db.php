@@ -14,7 +14,7 @@ if (mysqli_connect_error()) {
 
             
             
-            $query = "INSERT INTO `BabyName` (`name`, `color`, `parent`, `weight`, `14er`, `beer`, `pizza`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."', '".mysqli_real_escape_string($link, $_POST['weight'])."', '".mysqli_real_escape_string($link, $_POST['14er'])."', '".mysqli_real_escape_string($link, $_POST['beer'])."', '".mysqli_real_escape_string($link, $_POST['pizza'])."')";
+            $query = "INSERT INTO `BabyName` (`name`, `color`, `sport`, `parent`, `weight`, `14er`, `beer`, `pizza`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."', '".mysqli_real_escape_string($link, $_POST['weight'])."', '".mysqli_real_escape_string($link, $_POST['14er'])."', '".mysqli_real_escape_string($link, $_POST['beer'])."', '".mysqli_real_escape_string($link, $_POST['pizza'])."')";
                 
 
 
@@ -41,6 +41,8 @@ if (mysqli_connect_error()) {
 <h2>Baby Form</h2>
 <label for="BabyName">Baby Name:</label><br />
 <input id= "BabyName" name="name" type="text" placeholder = "What should the baby be named?" /><br/>
+<label for="FavoriteColor">Favorite Color:</label><br />
+<input id="FavoriteSport" name="color" type="text" placeholder = "What will his favorite color be?" /><br />
 <label for="FavoriteSport">Favorite Sport:</label><br />
 <input id="FavoriteSport" name="sport" type="text" placeholder = "What sport will he play?" /><br />
 <label for="FavoriteParent">Favorite Parent:</label><br />
