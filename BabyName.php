@@ -20,7 +20,7 @@ if (mysqli_connect_error()) {
 
             if (mysqli_query($link, $query)) {
 
-                echo '<script>alert("We've recieved your informtation! Thanks so much for helping us pick a name...")</script>';
+                echo '<script>alert("We recieved your informtation! Thanks so much for helping us pick a name...")</script>';
 
         } else {
 
