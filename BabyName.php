@@ -20,11 +20,12 @@ if (mysqli_connect_error()) {
 
             if (mysqli_query($link, $query)) {
 
-                echo "We recieved your informtation! ".$row[1]. "and are happy";
+                echo '<script>alert("We recieved your informtation! Thanks so much for helping us pick a name...")</script>';
 
         } else {
 
-            echo "Failure.";  
+            echo '<script>alert("We are unable to process your request at the moment please tell Kristin!")</script>';
+ 
                  }
             }
 
