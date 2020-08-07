@@ -1,133 +1,113 @@
+	#topbar {
+	    min-width: 0 auto;
+	    margin-top: 0 auto;
+	    height: 40px;
+	    background: #ff9900;
+	}
 	
-		#topbar {
-			min-width:0 auto;
-			margin-top:0 auto;
-			height: 40px;
-			background: #ff9900;
-			}
-		
-		.lead {
-		
-			margin-left:auto;
-			margin-right:auto;
-			font-family: 'Shadows Into Light', cursive;
-			text-align: center;
-			font-weight:bold;	
-			}
-		
-		.partition {
-			width:60px;
-			border-left: 1px black solid;
-			height:40px
-			}
-			
-		.topbar-menu {
-			width:120px;
-            float:left;
-			font-weight: bold;
-            font-size: 90%;
-            padding: 13px 15px 0 15px;
-            height:40px;
-			}
-		
-		.baby_form {
-			background-color:#0073e6;
-			text-align:center;	
-			font-size:25px;
-			
-		}	
-
-		#logos {
-			margin-top:8px;
-			float:left;
-			margin-right:8px;
-			}
-		
-		input { 
-
-			padding: 5px;
-			font-size: 25px;
-			border-radius: 5px;
-			border: 1px solid grey;
-			width:520px;
-		}
-		
-		label {
-			border-radius: 5px;
-			border: 1px solid grey;
-			position:relative;
-			top:1px;
-			
-
-			
-			}
-		
-		#successMessage {
-			background-color: white;
-			color:green;
-			font-size: 100% !important;
-			display:none;
-		}
-
-			
-		#errorMessage {
-			background-color: white;
-			color:red;
-			font-size: 100% !important;
-			
-			
-		
-		#wrapper{
-		
-			width: 500px;
-			margin: 0 auto;
-			
-			}
-		}
-		select { 
-
-			padding: 5px;
-			font-size: 25px;
-			border-radius: 5px;
-			border: 1px solid grey;
-			width:520px;
-		}
-		
-		.clear {
-			clear:both;
-			}
-		
-		*{
-			box-sizing: border-box;
-			}
-
-		body {
-			margin:0;
-			padding:0;
-			background-color: #6AADE3;
-			background-blend-mode:lighten;
-			font-family: Arial, Helvetica, sans-serif;
-			}
-
-
-		header {
-			background-color: #0073e6;
-			padding: 30px;
-			text-align: center;
-			font-size: 35px;
-			color: white;
-			}
-
-		footer {
-			background-color: #ff9900;
-			padding: 10px;
-			text-align: center;
-			color: white;
-		}
-
-		(max-width: 600px) {
-		nav, article {
-		width: 100%;
-		height: auto;
-			}	
-		}
+	.lead {
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-family: 'Shadows Into Light', cursive;
+	    text-align: center;
+	    font-weight: bold;
+	}
+	
+	.partition {
+	    width: 60px;
+	    border-left: 1px black solid;
+	    height: 40px
+	}
+	
+	.topbar-menu {
+	    width: 120px;
+	    float: left;
+	    font-weight: bold;
+	    font-size: 90%;
+	    padding: 13px 15px 0 15px;
+	    height: 40px;
+	}
+	
+	.baby_form {
+	    background-color: #0073e6;
+	    text-align: center;
+	    font-size: 25px;
+	}
+	
+	#logos {
+	    margin-top: 8px;
+	    float: left;
+	    margin-right: 8px;
+	}
+	
+	input {
+	    padding: 5px;
+	    font-size: 25px;
+	    border-radius: 5px;
+	    border: 1px solid grey;
+	    width: 520px;
+	}
+	
+	label {
+	    border-radius: 5px;
+	    border: 1px;
+	    position: relative;
+	    top: 1px;
+	}
+	
+	#successMessage {
+	    background-color: white;
+	    color: green;
+	    font-size: 100% !important;
+	    display: none;
+	}
+	
+	#errorMessage {
+	    background-color: white;
+	    color: red;
+	    font-size: 100% !important;
+	}
+	
+	#wrapper {
+	    width: 500px;
+	    margin: 0 auto;
+	}
+	
+	select {
+	    padding: 5px;
+	    font-size: 25px;
+	    border-radius: 5px;
+	    border: 1px solid grey;
+	    width: 520px;
+	}
+	
+	.clear {
+	    clear: both;
+	}
+	
+	* {
+	    box-sizing: border-box;
+	}
+	
+	body {
+	    margin: 0;
+	    padding: 0;
+	    background-color: #6AADE3;
+	    background-blend-mode: lighten;
+	    font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	header {
+	    background-color: #0073e6;
+	    padding: 30px;
+	    text-align: center;
+	    font-size: 35px;
+	    color: white;
+	}
+	
+	footer {
+	    background-color: #ff9900;
+	    padding: 10px;
+	    text-align: center;
+	    color: white;
+	}
