@@ -20,7 +20,7 @@ if (mysqli_connect_error()) {
 
             if (mysqli_query($link, $query)) {
 
-                echo "We recieved your informtation! " .$row[1];
+                echo "We recieved your informtation! ".$row[1]. "and are happy";
 
         } else {
 
