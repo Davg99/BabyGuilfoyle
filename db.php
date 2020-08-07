@@ -21,13 +21,13 @@ if (mysqli_connect_error()) {
         } else { 
             
             
-            $query = "INSERT INTO `BabyName` (`name`, `color`, `parent`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."')";
+            $query = "INSERT INTO `BabyName` (`name`, `color`, `parent`, `weight`, `14er`, `beer`, `pizza`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."', '".mysqli_real_escape_string($link, $_POST['weight'])."', '".mysqli_real_escape_string($link, $_POST['14er'])."', '".mysqli_real_escape_string($link, $_POST['beer'])."', '".mysqli_real_escape_string($link, $_POST['pizza'])."')";
                 
 
 
             if (mysqli_query($link, $query)) {
 
-                echo "We got the name.";
+                echo "We got the info!  Thanks so much!";
 
         } else {
 
