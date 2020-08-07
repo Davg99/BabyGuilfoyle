@@ -11,14 +11,7 @@ if (mysqli_connect_error()) {
 
     } 
          
-        $query = "SELECT `id` FROM `BabyName` WHERE name = '".mysqli_real_escape_string($link, $_POST['name'])."'";   
 
-        $result = mysqli_query($link, $query);
-        
-        if (mysqli_num_rows($result) > 0) {
-
-            echo "That Name already exists";
-        } else { 
             
             
             $query = "INSERT INTO `BabyName` (`name`, `color`, `parent`, `weight`, `14er`, `beer`, `pizza`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."', '".mysqli_real_escape_string($link, $_POST['weight'])."', '".mysqli_real_escape_string($link, $_POST['14er'])."', '".mysqli_real_escape_string($link, $_POST['beer'])."', '".mysqli_real_escape_string($link, $_POST['pizza'])."')";
@@ -35,7 +28,7 @@ if (mysqli_connect_error()) {
                  }
             }
 
-        }
+        
     
 
 
