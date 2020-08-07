@@ -27,9 +27,7 @@ if (mysqli_connect_error()) {
             if (mysqli_query($link, $query)) {
 
             
-                $_SESSION['name'] = $_POST['name']:
-
-                header("Location: GIT/session.php"):
+echo '<script>alert("Success")</script>';
                 
         } else {
 
