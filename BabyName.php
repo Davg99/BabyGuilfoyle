@@ -107,17 +107,17 @@ if (mysqli_connect_error()) {
 		}             
 </style>
 <div id="topbar">
-        <div class="partition topbar-menu"><a href="http://www.bootsoles.com" hrefs="http://www.bootsoles.com&quot;">Home</a></div>
+        <div class="partition topbar-menu"><a href="http://www.babyguilfoyle.com" hrefs="http://www.babyguilfoyle.com&quot;">Home</a></div>
 
-        <div class="partition topbar-menu"><a href="/GIT/Us.html" hrefs="http://www.bootsoles.com/Us&quot;">Us</a></div>
+        <div class="partition topbar-menu"><a href="/GIT/Us.html" hrefs="http://http://www.babyguilfoyle.com/Us&quot;">Us</a></div>
 
-        <div class="partition topbar-menu"><a href="/GIT/Kristin.html" hrefs="http://www.bootsoles.com/Kristin&quot;">Kristin</a></div>
+        <div class="partition topbar-menu"><a href="/GIT/Kristin.html" hrefs="http://www.babyguilfoyle.com/Kristin&quot;">Kristin</a></div>
 
-        <div class="partition topbar-menu"><a href="/GIT/David.html" hrefs="http://www.bootsoles.com/David&quot;">David </a></div>
+        <div class="partition topbar-menu"><a href="/GIT/David.html" hrefs="http://www.babyguilfoyle.com/David&quot;">David </a></div>
 
-        <div class="partition topbar-menu"><a href="/GIT/BabyName.php" hrefs="http://www.bootsoles.com/BabyName.php&quot;">Baby Name </a></div>
+        <div class="partition topbar-menu"><a href="/GIT/BabyName.php" hrefs="http://www.babyguilfoyle.com/BabyName.php&quot;">Baby Name </a></div>
 
-        <div class="partition topbar-menu"><a href="/GIT/Baby_Pics.html" hrefs="http://www.bootsoles.com/Baby_Pics&quot;">Baby Pics </a></div>
+        <div class="partition topbar-menu"><a href="/GIT/Baby_Pics.html" hrefs="http://www.babyguilfoyle.com/Baby_Pics&quot;">Baby Pics </a></div>
     </div>
 
     <p></p>
