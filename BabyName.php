@@ -27,7 +27,7 @@ if (mysqli_connect_error()) {
             if (mysqli_query($link, $query)) {
 
             
-                echo '<script>alert("Success We have recieved your input!")</script>';
+                echo '<script>alert("Success We have recieved your input!  Thanks so much for helping us!)</script>';
 
                 
         } else {
