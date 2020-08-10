@@ -20,7 +20,7 @@ if (mysqli_connect_error()) {
 
             
             
-            $query = "INSERT INTO `BabyName` (`name`, `color`, `sport`, `parent`, `weight`, `14er`, `beer`, `pizza`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."', '".mysqli_real_escape_string($link, $_POST['weight'])."', '".mysqli_real_escape_string($link, $_POST['14er'])."', '".mysqli_real_escape_string($link, $_POST['beer'])."', '".mysqli_real_escape_string($link, $_POST['pizza'])."')";
+            $query = "INSERT INTO `BabyName` (`name`, `color`, `sport`, `parent`, `weight`, `14er`, `beer`, `pizza`) VALUES ('".mysqli_real_escape_string($link, $_POST['name'])."', '".mysqli_real_escape_string($link, $_POST['color'])."', '".mysqli_real_escape_string($link, $_POST['sport'])."', '".mysqli_real_escape_string($link, $_POST['parent'])."', '".mysqli_real_escape_string($link, $_POST['weight'])."', '".mysqli_real_escape_string($link, $_POST['14er'])."', '".mysqli_real_escape_string($link, $_POST['beer'])."', '".mysqli_real_escape_string($link, $_POST['pizza'])."')";
                 
 
 
